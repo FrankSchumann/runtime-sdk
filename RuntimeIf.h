@@ -7,7 +7,7 @@
 class RuntimeIf : public COPA::ComponentIf
 {
    public:
-    virtual void startApplications() = 0;
-    virtual void stopApplications() = 0;
-    virtual std::string getRuntimeVersion() = 0;
+    virtual void startApplications() const = 0;
+    virtual void stopApplications() const = 0;
+    virtual std::string getRuntimeVersion() const = 0;
 };
